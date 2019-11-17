@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_order_activity" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/order_list"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/order_list"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:id="@+id/order_view"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorYellow"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/order_history"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:text="@string/order_history"
+                    android:textColor="@color/colorAsh"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:id="@+id/history_view"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorAsh"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/scheduled_list"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_scheduled_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center"
+                    android:text="Scheduled Order"
+                    android:textColor="@color/colorAsh"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:id="@+id/scheduled_view"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorAsh"></View>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:id="@+id/img_calender"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/calendar"/>
+
+            <ListView
+
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="vertical"
+               />
+            <ListView
+                android:layout_marginTop="65dp"
+                android:visibility="gone"
+                android:id="@+id/listview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="vertical"
+                />
+            <ListView
+
+                android:id="@+id/listview3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="vertical"
+                />
+            <FrameLayout
+
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="52dp"
+                android:layout_marginEnd="26dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btn_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="bottom|center_vertical"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/report_one"
+                    android:scaleType="center"
+                    />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/img_ebuy_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:src="@drawable/eb_logo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp">
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:imeActionLabel="Next"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorLightAsh"
+                    android:textSize="20sp"/>
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:imeActionLabel="Done"
+                    android:hint="@string/password"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorLightAsh"
+                    android:textSize="20sp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_header"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/login_button"/>
+
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                   />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

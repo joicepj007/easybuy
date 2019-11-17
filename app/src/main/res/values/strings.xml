@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">EasyBuyCustomerAgent</string>
+
+    <string name="google_maps_key">AIzaSyDw7CwQUEdr0VTxk52A2PI2R36h5htL-Xs</string>
+
+    //Login
+    <string name="login_header">LOGIN</string>
+    <string name="user_name">Enter UserName</string>
+    <string name="password">Enter Password</string>
+
+    //order
+    <string name="grocery_name">Grocery Name</string>
+    <string name="grocery_address">Grocery Address</string>
+    <string name="order_list">Order List</string>
+    <string name="order_history">Order History</string>
+
+    //OrderDetail
+    <string name="sub_total">Subtotal</string>
+    <string name="delivery">Delivery</string>
+    <string name="vat">Vat</string>
+    <string name="total">Total</string>
+    <string name="reject">REJECT</string>
+    <string name="accept">ACCEPT</string>
+    <string name="dispatch">DISPATCH</string>
+
+    //Popup
+    <string name="reason">Reason</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+
+    //Report
+    <string name="report">REPORT</string>
+</resources>
